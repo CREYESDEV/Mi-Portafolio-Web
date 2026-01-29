@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cristian Reyes | Webs ultra rápidas y optimizadas para SEO local</title>
+  <meta name="description" content="Ayudo a negocios locales a verse profesionales y cargar rápido en cualquier dispositivo." />
+        <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Hago sitios web rápidos para negocios locales</h1>
+      <p>Portafolio en construcción. Enfocado en velocidad, SEO y diseño limpio.</p>
+      <a href="#contacto">Hablemos</a>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <article>
+        <h3>Barbería — Landing Page</h3>
+        <p>Diseño responsive + SEO básico + buen rendimiento.</p>
+
+       <a href="../barberia/index.html">Ver demo</a>
+       <a href="#">Ver código</a>
+
+      </article>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <label>
+          Nombre
+          <input type="text" name="nombre" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> Tu Nombre</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
