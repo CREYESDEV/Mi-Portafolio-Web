@@ -207,27 +207,32 @@
           <h2>Contacto</h2>
           <p class="muted">Cuéntame tu idea. Respondo lo antes posible.</p>
 
-          <form class="form" name="contacto" method="post" data-netlify="true">
-            <input type="hidden" name="form-name" value="contacto" />
+          <form class="form"
+      name="contacto"
+      method="POST"
+      data-netlify="true"
+      action="/thanks.html">
 
-            <label>
-              Nombre
-              <input type="text" name="nombre" required />
-            </label>
+  <input type="hidden" name="form-name" value="contacto" />
 
-            <label>
-              Email
-              <input type="email" name="email" required />
-            </label>
+  <label>
+    Nombre
+    <input type="text" name="nombre" required />
+  </label>
 
-            <label>
-              Mensaje
-              <textarea name="mensaje" rows="4" required></textarea>
-            </label>
+  <label>
+    Email
+    <input type="email" name="email" required />
+  </label>
 
-            <button class="btn btn--primary" type="submit">Enviar</button>
-            <p class="note">*Este formulario funciona en Netlify (Forms).</p>
-          </form>
+  <label>
+    Mensaje
+    <textarea name="mensaje" rows="4" required></textarea>
+  </label>
+
+  <button class="btn btn--primary" type="submit">Enviar</button>
+</form>
+
         </div>
 
         <aside class="panel reveal">
