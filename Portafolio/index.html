@@ -3,72 +3,256 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cristian Reyes | Webs ultra rápidas y optimizadas para SEO local</title>
-  <meta name="description" content="Ayudo a negocios locales a verse profesionales y cargar rápido en cualquier dispositivo." />
-        <link rel="stylesheet" href="styles.css" />
+  <title>Cristian Reyes | Webs rápidas, modernas y enfocadas en conversión</title>
+  <meta name="description" content="Portafolio de Cristian Reyes: sitios rápidos, diseño limpio, SEO local y despliegue con GitHub + Netlify." />
 
+  <meta property="og:title" content="Cristian Reyes | Portafolio" />
+  <meta property="og:description" content="Proyectos: Barbería y Landing de Instalación de Luces. Sitios rápidos y optimizados." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#2F6FED" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand__mark">CR</span>
+        <span class="brand__text">
+          <strong>Cristian Reyes</strong>
+          <span>Web rápida + SEO local</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <a class="btn btn--primary" href="#contacto">Hablemos</a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section id="inicio">
-      <h1>Hago sitios web rápidos para negocios locales</h1>
-      <p>Portafolio en construcción. Enfocado en velocidad, SEO y diseño limpio.</p>
-      <a href="#contacto">Hablemos</a>
+  <main id="contenido">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Diseño limpio • Mobile-first • Optimización • Netlify + GitHub</p>
+
+          <h1>Sitios web modernos que cargan rápido y convierten clientes</h1>
+          <p class="lead">
+            Construyo landing pages y sitios para negocios locales: performance real, estructura SEO,
+            y un diseño profesional que inspira confianza.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn--ghost" href="#contacto">Cotizar</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>⚡ Performance</strong>
+              <span>Optimización práctica</span>
+            </div>
+            <div class="stat">
+              <strong>🔎 SEO local</strong>
+              <span>Estructura + metadatos</span>
+            </div>
+            <div class="stat">
+              <strong>📱 Responsive</strong>
+              <span>Perfecto en móvil</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__card reveal">
+          <h2>Stack</h2>
+          <ul class="list">
+            <li>HTML / CSS / JavaScript</li>
+            <li>GitHub + Netlify Deploy</li>
+            <li>CTA + Formularios</li>
+            <li>Buenas prácticas SEO</li>
+          </ul>
+
+          <div class="mini">
+            <a class="btn btn--ghost btn--full" href="https://github.com/CREYESDEV" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn--ghost btn--full" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <p class="note">*Actualiza LinkedIn cuando quieras.</p>
+        </aside>
+      </div>
     </section>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
+    <!-- PROJECTS -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Proyectos</h2>
+          <p>Mis trabajos recientes. Puedes ver el sitio en vivo o el repositorio en GitHub.</p>
+        </div>
 
-      <article>
-        <h3>Barbería — Landing Page</h3>
-        <p>Diseño responsive + SEO básico + buen rendimiento.</p>
+        <div class="grid3">
+          <!-- Barbería -->
+          <article class="cardp reveal">
+            <div class="thumb thumb--barber" role="img" aria-label="Vista previa del proyecto Barbería"></div>
 
-       <a href="https://sensational-custard-5ffb5d.netlify.app/" target="_blank" rel="noopener">Ver demo</a>
+            <div class="cardp__body">
+              <h3>Barbería — Landing Page</h3>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">CTA</span>
+              </div>
+              <p class="muted">
+                Landing para negocio local con secciones claras, llamada a la acción y botón de WhatsApp para contacto rápido.
+              </p>
+              <div class="actions">
+                <a class="btn btn--primary" href="https://sensational-custard-5ffb5d.netlify.app/" target="_blank" rel="noreferrer">Ver demo</a>
+                <a class="btn btn--ghost" href="https://github.com/CREYESDEV/Mi-Portafolio-Web/tree/main/Barberia" target="_blank" rel="noreferrer">Ver código</a>
+              </div>
+            </div>
+          </article>
 
-       <a href="#">Ver código</a>
+          <!-- Luces -->
+          <article class="cardp reveal">
+            <div class="thumb thumb--lights" role="img" aria-label="Vista previa del proyecto Instalación de Luces"></div>
 
-      </article>
+            <div class="cardp__body">
+              <h3>Instalación de Luces — Landing Page</h3>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+                <span class="tag">Netlify</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Forms</span>
+              </div>
+              <p class="muted">
+                Landing enfocada en conversión: CTA claro, galería, reseñas, FAQ y formulario listo para Netlify Forms.
+              </p>
+              <div class="actions">
+                <a class="btn btn--primary" href="https://delicate-fairy-757866.netlify.app/" target="_blank" rel="noreferrer">Ver demo</a>
+                <a class="btn btn--ghost" href="https://github.com/CREYESDEV/RamosBrothers" target="_blank" rel="noreferrer">Ver código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coming soon -->
+          <article class="cardp reveal">
+            <div class="thumb thumb--soon" role="img" aria-label="Proyecto en proceso"></div>
+
+            <div class="cardp__body">
+              <h3>Proyecto en Proceso</h3>
+              <div class="tags">
+                <span class="tag tag--soft">Next.js</span>
+                <span class="tag tag--soft">React</span>
+                <span class="tag tag--soft">API</span>
+              </div>
+              <p class="muted">
+                Nuevo proyecto en desarrollo. Pronto agregaré resultados, capturas y caso de estudio.
+              </p>
+              <div class="actions">
+                <a class="btn btn--disabled" href="#contacto" aria-disabled="true">Próximamente</a>
+                <a class="btn btn--ghost" href="#contacto">Pedir actualización</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form>
-        <label>
-          Nombre
-          <input type="text" name="nombre" required />
-        </label>
+    <!-- SERVICES -->
+    <section id="servicios" class="section section--soft">
+      <div class="container">
+        <div class="section__head">
+          <h2>Servicios</h2>
+          <p>Lo que entrego normalmente para negocios locales.</p>
+        </div>
 
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
+        <div class="grid3">
+          <article class="card reveal">
+            <h3>Landing page (1 página)</h3>
+            <p class="muted">CTA, secciones de confianza, WhatsApp, formulario y diseño moderno.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Optimización de velocidad</h3>
+            <p class="muted">Imágenes, estructura, carga rápida, experiencia móvil y buenas prácticas.</p>
+          </article>
+          <article class="card reveal">
+            <h3>SEO local básico</h3>
+            <p class="muted">Metadatos, headings, texto orientado a ciudad/servicio y base para indexación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <label>
-          Mensaje
-          <textarea name="mensaje" rows="4" required></textarea>
-        </label>
+    <!-- CONTACT -->
+    <section id="contacto" class="section">
+      <div class="container contact">
+        <div class="reveal">
+          <h2>Contacto</h2>
+          <p class="muted">Cuéntame tu idea. Respondo lo antes posible.</p>
 
-        <button type="submit">Enviar</button>
-      </form>
+          <form class="form" name="contacto" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contacto" />
+
+            <label>
+              Nombre
+              <input type="text" name="nombre" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="4" required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <p class="note">*Este formulario funciona en Netlify (Forms).</p>
+          </form>
+        </div>
+
+        <aside class="panel reveal">
+          <h3>Enlaces rápidos</h3>
+          <a class="link" href="mailto:creyes7@gmail.com">crixreyes7@gmail.com</a>
+          <a class="link" href="https://github.com/CREYESDEV" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link" href="https://www.linkedin.com/in/cristian-reyes-529317199/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link" href="https://creyes.site/" target="_blank" rel="noreferrer">Sitio</a>
+
+          <div class="divider"></div>
+          <p class="small muted">
+        
+          </p>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <small>© <span id="year"></span> Tu Nombre</small>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <small>© <span id="year"></span> Cristian Reyes</small>
+      <small class="muted">Hecho con HTML/CSS/JS • Deploy: Netlify • Código: GitHub</small>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
